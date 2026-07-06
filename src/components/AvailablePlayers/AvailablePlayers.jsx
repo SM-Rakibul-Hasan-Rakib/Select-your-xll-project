@@ -5,9 +5,11 @@ const AvailablePlayers = ({
   playersPromise,
   setAvailableBalance,
   availableBalance,
+  purchasesPlayers,
+  setPurchasesPlayers,
 }) => {
   const playerData = use(playersPromise);
-  console.log(playerData);
+  // console.log(playerData);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
@@ -16,6 +18,8 @@ const AvailablePlayers = ({
         <PlayerCard
           availableBalance={availableBalance}
           setAvailableBalance={setAvailableBalance}
+          purchasesPlayers={purchasesPlayers}
+          setPurchasesPlayers={setPurchasesPlayers}
           player={player}
           key={index}
         ></PlayerCard>

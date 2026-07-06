@@ -1,9 +1,29 @@
 import React, { useState } from "react";
 import grpImg from "../../assets/group.png";
 import flagImg from "../../assets/Vector.png";
+import AvailablePlayers from "../AvailablePlayers/AvailablePlayers";
+import { toast } from "react-toastify";
 
-const PlayerCard = ({ player, setAvailableBalance, availableBalance }) => {
+const PlayerCard = ({
+  player,
+  setAvailableBalance,
+  availableBalance,
+  purchasesPlayers,
+  setPurchasesPlayers,
+}) => {
   const [isSelected, setIsSelected] = useState(false);
+
+  const handleSelected = (playerData) => {
+    const playerPrice = parseInt(
+      playerData.price.split("USD").join("").split(",").join(""),
+    );
+    if (availableBalance < playerPrice) {
+      toast("Not Enough Balance!");
+    }
+    setIsSelected(true);
+    setAvailableBalance(availableBalance - playerPrice);
+    setPurchasesPlayers([...purchasesPlayers, playerData]);
+  };
 
   return (
     <div className="border border-gray-300 p-4 rounded-lg">
@@ -11,7 +31,7 @@ const PlayerCard = ({ player, setAvailableBalance, availableBalance }) => {
       <div className="card bg-base-100 w-full shadow-sm p-4">
         <figure>
           <img
-            className="w-full h-[200px] object-cover"
+            className=" object-cover"
             src={player["player-image"]}
             alt="Player"
           />
@@ -41,16 +61,15 @@ const PlayerCard = ({ player, setAvailableBalance, availableBalance }) => {
           </div>
 
           <div className="card-actions mt-4 flex justify-between items-center">
-            <p className="font-bold">Price : {player.price}</p>
+            <p className="font-bold">Price : ${player.price}</p>
             <button
               className={`btn btn-sm ${isSelected ? "bg-amber-400" : "bg-base-100"}`}
               disabled={isSelected}
               onClick={() => {
-                setIsSelected(true);
-                const price = Number(
-                  player.price.replace("$", "").replaceAll(",", ""),
-                );
-                setAvailableBalance(availableBalance - price);
+                handleSelected(player);
+                // const price = Number(
+                //   player.price.replace("$", "").replaceAll(",", ""),
+                // );
               }}
             >
               {isSelected === true ? "Selected" : "Choose Player"}

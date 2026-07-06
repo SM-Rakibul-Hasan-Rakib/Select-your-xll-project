@@ -6,7 +6,7 @@
     "player-role": "All-Rounder",
     "rating-style": "Left-hand bat",
     "bowling-style": "Slow left-arm orthodox",
-    "price": "$80,000",
+    "price": "80,000 USD",
     "rating": 5.0
   },
   {
@@ -16,7 +16,7 @@
     "player-role": "Wicketkeeper Batter",
     "rating-style": "Right-hand bat",
     "bowling-style": "Right-arm off break",
-    "price": "$65,000",
+    "price": "65,000 USD",
     "rating": 4.5
   },
   {
@@ -26,7 +26,7 @@
     "player-role": "Wicketkeeper Batter",
     "rating-style": "Right-hand bat",
     "bowling-style": "Right-arm medium",
-    "price": "$80,000",
+    "price": "80,000 USD",
     "rating": 4.5
   },
   {
@@ -36,7 +36,7 @@
     "player-role": "Bowler",
     "rating-style": "Left-hand bat",
     "bowling-style": "Right-arm fast",
-    "price": "$65,000",
+    "price": "65,000 USD",
     "rating": 4.8
   },
   {
@@ -46,7 +46,7 @@
     "player-role": "All-Rounder",
     "rating-style": "Left-hand bat",
     "bowling-style": "Slow left-arm orthodox",
-    "price": "$40,000",
+    "price": "40,000 USD",
     "rating": 4.2
   },
   {
@@ -56,7 +56,7 @@
     "player-role": "Batter",
     "rating-style": "Left-hand bat",
     "bowling-style": "Right-arm off break",
-    "price": "$41,000",
+    "price": "41,000 USD",
     "rating": 4.9
   },
   {
@@ -66,7 +66,7 @@
     "player-role": "Batter",
     "rating-style": "Right-hand bat",
     "bowling-style": "Right-arm off break",
-    "price": "$60,000",
+    "price": "60,000 USD",
     "rating": 4.4
   },
   {
@@ -76,7 +76,7 @@
     "player-role": "Bowler",
     "rating-style": "Left-hand bat",
     "bowling-style": "Left-arm fast-medium",
-    "price": "$70,000",
+    "price": "70,000 USD",
     "rating": 4.8
   },
   {
@@ -86,7 +86,7 @@
     "player-role": "Batter",
     "rating-style": "Right-hand bat",
     "bowling-style": "Right-arm off break",
-    "price": "$85,000",
+    "price": "85,000 USD",
     "rating": 4.7
   },
   {
@@ -96,7 +96,7 @@
     "player-role": "All-Rounder",
     "rating-style": "Right-hand bat",
     "bowling-style": "Right-arm off break",
-    "price": "$50,000",
+    "price": "50,000 USD",
     "rating": 4.6
   },
   {
@@ -106,7 +106,7 @@
     "player-role": "Batter",
     "rating-style": "Left-hand bat",
     "bowling-style": "Right-arm off break",
-    "price": "$95,000",
+    "price": "95,000 USD",
     "rating": 4.9
   },
   {
@@ -116,7 +116,7 @@
     "player-role": "Bowler",
     "rating-style": "Left-hand bat",
     "bowling-style": "Left-arm medium-fast",
-    "price": "$55,000",
+    "price": "55,000 USD",
     "rating": 4.3
   }
 ]
